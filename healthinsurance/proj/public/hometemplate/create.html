@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+#message {
+    display:none;
+    color: #000;
+    padding: 0px;
+    margin-bottom: 1%;
+    margin-top: -98%;
+    height: 45px;
+    width: 50px;
+    float: right;
+    margin-right: -434px;
+    margin-left: 900px;
+  }
+  form{
+    width: 75%;
+    margin-top: -6px;
+    float: right;
+    margin-left: 80%;
+    border: 1px solid #B0C4DE;
+    background: white;
+    margin-bottom: 12px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .input-group {
+    margin: 10px 0px 10px 6px;
+    width: 50%;
+  }
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin-left: 3px;
+  }
+  .input-group input {
+    height: 40px;
+    width: 96%;
+    font-size: 16px;
+    margin-left: 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .btn btn-theme {
+    background-color: #180761;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(229, 228, 235);
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5%;
+  }
+  input[type=text], input[type=date], input[type=password],input[type=email], select {
+    width: 99%;
+    padding: 11px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dcd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /*background-color: #f2f2f2;*/
+  }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Health insurance</title>
+  <link rel="stylesheet" type="text/css" href="bold.css">
+  <link href="assets/css/style1.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style2.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slide&side.css">
+</head>
+<body>
+  
+  <div id="header">
+    <div class="container">
+      <div class="row" style="margin-left: 0px;margin-right: 100px;padding-right: 0px;padding-left: 150px;">
+       <form method="post" action="Admincreate.php" class="form-inline signup" role="form"style="width: 100%;margin-left: 100px;border: none;margin-top: 8px;padding-right: 140px;padding-bottom: 60px;">
+        <div class="col-lg-4" style="margin-top: -0.5%;">
+          <?php echo display_error(); ?>
+          <div class="input-group">
+            <label style="margin-left: 4%;">Username</label>
+            <input type="text" id='nameInput' minlength="4" name="username" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'required>
+          </div>
+          <div class="input-group">
+            <label style="margin-left: 4%;">Email</label>
+            <input type="email" name="email" value="" required>
+          </div>
+          <div class="input-group" style="margin-left: 1.3%;">
+            <label style="margin-left: 4%;">User type</label>
+            <select name="user_type"id="user_type"style="width: 98%;height: 40px;border-radius: 5px;"  >
+              <option value="">--select-one--</option>
+              <option value="Adminstrater">Adminstrater</option>
+              <option value="HImanager">HI manager</option>
+              <option value="HHIofficer">HHI officer</option>
+              <option value="Kebelemanager">Kebele manager</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Gender</label>
+            <select class="form-control" name="gender" style="margin-top: 1.5%;height: 39px;width: 99%;" >
+             <option class="hidden"  selected disabled></option>
+             <option>Male</option>
+             <option>Female</option>
+           </select>
+         </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="input-group">
+            <label>Kebele</label>
+            <select class="form-control" name="address" style="margin-top: 1.5%;height: 39px;width: 99%;" >
+             <option class="hidden"  selected disabled></option>
+             <option>01</option>
+             <option>02</option>
+             <option>03</option>
+             <option>04</option>
+             <option>05</option>
+             <option>06</option>
+             <option>07</option>
+             <option>08</option>
+             <option>09</option>
+             <option>10</option>
+             <option>11</option>
+             <option>12</option>
+             <option>13</option>
+             <option>14</option>
+             <option>15</option>
+             <option>16</option>
+             <option>17</option>
+             <option>18</option>
+             <option>19</option>
+             <option>20</option>
+           </select>
+         </div>
+          <div class="input-group">
+            <label for="date"style="margin-left: 4%;">Date</label>
+            <input type="date" name="dateofbirth" value=" id=dateofbirth">
+          </div>
+          <div class="input-group">
+            <label style="margin-left: 4%;">Password</label>
+            <input type="password" id="psw" name="password_1"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          </div>
+          <div class="input-group">
+            <label style="margin-left: 4%;">Confirm password</label>
+            <input type="password" name="password_2"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          </div>       
+          <div class="input-group">
+           <button type="submit" class="btn btn-theme" name="register_btn"> + Create user</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="Reset"class="btn btn-theme" value="Reset"><i class="fa fa-refresh"></i>Reset</button>
+          </div>
+        
+        <div id="message">
+              <h3>Password must contain:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+                       <script>
+              var myInput = document.getElementById("psw");
+              var letter = document.getElementById("letter");
+              var capital = document.getElementById("capital");
+              var number = document.getElementById("number");
+              var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="copyright">Copyright&copy;2022 web based Health Insurance Management System</p>
+        </div>
+        <div class="col-md-6">
+          <div class="credits">
+
+            Designed by CSE 5th year
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

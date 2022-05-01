@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> adama health insurance </title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+      <div class="link">
+       
+        <p><b><a href="index.html">Dashboard</a></b> </p>
+        <p><b><a href="create.html">create account</a></b> </p>
+        <p><b><a href="active.html">active account</a></b></p>
+        <p><b><a href="change password.html">change password</a></b></p>
+        <p><b><a href="deactive.html">deactive account</a></b></p>
+        <p><b><a href="logout.html">logout</a></b></p>
+      </div>
+      <div class="home-content">
+        <h1>Admin control all account</h1>
+      
+        <p1><b><a href="kebele.html">kebele manager</a></b> </p1>
+        <p2><b><a href="haelth.html">health office manager</a></b> </p2>
+        <p3><b><a href="customer.html">customer</a></b> </p3>
+        <p4><b><a href="HI.html">HI manager</a></b> </p4>
+        </div>
+       
+      
+       
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>

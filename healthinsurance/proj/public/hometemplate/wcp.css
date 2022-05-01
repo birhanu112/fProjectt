@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+.side{
+    position: fixed;
+    width:100%;
+    left:250px;
+    top: 100px;
+    height: 100px;
+    background: #042331;
+    
+  }
+.side ul a{
+  display:inline-block;
+  color: white;
+  line-height: 65px;
+  font-size: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+  }

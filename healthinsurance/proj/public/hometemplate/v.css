@@ -1,0 +1,58 @@
+/* * {
+  box-sizing: border-box;
+}
+body {
+  margin: 60px;
+  padding: 5px;
+} */
+.table_responsive {
+  max-width: 900px;
+
+  padding: 15px;
+  margin: auto;
+  border-radius: 6px;
+}
+.hiddentable {
+  display: none;
+}
+
+table {
+  border: 1px solid blue;
+  background-color: beige;
+  width: 100%;
+  padding: 15px;
+  font-size: 13px;
+  color: #444;
+  white-space: nowrap;
+  border-collapse: collapse;
+  margin: 5rem;
+}
+table > thead {
+  background-color: white;
+}
+table > thead th {
+  padding: 15px;
+}
+table th,
+table td {
+  border: 1px solid #00000017;
+}
+.action_btn {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+.action_btn > a {
+  text-decoration: none;
+  color: #444;
+  background-color: white;
+  border: 1px solid orange;
+  display: inline;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+.action_btn > a :nth-child(1) {
+  border-color: #26a69a;
+}

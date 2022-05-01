@@ -1,0 +1,185 @@
+*
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+    
+
+}
+.full-page
+
+{
+
+    height: 100vh;
+
+    width: 100%;
+
+    background:color#eeebeb;
+
+    position: absolute;
+
+}
+.form-box
+
+{
+
+    width: 400px;
+
+	height: 400px;
+
+	position: relative;
+
+    top: 10px;
+
+    left: 120px;
+
+	background: rgba(243, 235, 235, 0.6);
+
+}
+.main-heading
+
+{
+
+    color: black;
+
+    padding-bottom: 20px;
+
+}
+.row
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+
+.col-1
+
+{
+
+    flex-basis: 50%;
+
+    min-width: 300px;
+
+}
+.form
+
+{
+
+	position: relative;
+
+	margin: 0 auto 100px;
+
+	padding: 45px;
+
+    text-align: center;
+
+}
+.form input
+
+{
+
+	font-family: sans-serif;
+
+	outline: none;
+
+    border: none;
+
+    border-bottom: 1px solid black;
+
+	width: 100%;
+
+	margin: 0 0 15px;
+
+	padding: 15px;
+
+	font-size: 14px;
+
+}
+.form button
+
+{
+
+	font-family: sans-serif;
+
+	width: 100%;
+
+    color: white;
+
+	font-size: 14px;
+
+	cursor: pointer;
+
+	padding: 15px;
+
+    border: none;
+
+    background: rgb(80, 112, 255);
+
+}
+.form button:hover{
+    background-color: rgb(23, 3, 68);
+
+}
+
+.form .message
+
+{
+
+    font-size: 12px;
+
+	margin: 15px 0 0;
+
+    color: white;
+
+}
+form .message a
+
+{
+
+	color: orangered;
+
+	text-decoration: none;
+
+}
+.form .message
+
+{
+
+    font-size: 30px;
+
+	margin: 15px 10 0;
+
+    color: rgb(15, 1, 1);
+
+}
+form .pass-link{
+    margin-top: 20px;
+    text-decoration: solid;
+  }
+  .health{
+      border-radius: 5px;
+  
+      position: relative;
+  
+      top: 50px;
+  
+      left: 530px;
+  
+      background: rgba(243, 235, 235, 0.6);
+  
+
+}
+a:hover {
+    background-color: rgb(23, 3, 68)
+  }

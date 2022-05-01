@@ -1,0 +1,97 @@
+.firstform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    border: 3px;
+    width: 1040px;
+    height: 535px;
+    top: 0px;
+}
+.secondform {
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    border: 3px;
+    width: 500px;
+    height: 535px;
+    top: 0px;
+}
+.ff {
+    width: 35%;
+    padding: 8px 5px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.sf {
+    width: 70%;
+    padding: 8px 5px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.pay {
+    padding: 20px 13px;
+    margin: 10px 0;
+    border: 1px solid gray;
+}
+.taxs {
+    width: 70%;
+    padding: 8px 5px;
+    margin: 3px 0;
+    border: 1px solid gray;
+}
+.link {
+    border-radius: 5px;
+    background-color: rgb(114, 113, 113);
+    padding: 20px;
+    position: absolute;
+    right: 1;
+    border: 3px;
+    width: 160px;
+    height: 535px;
+    top: 0px;
+}
+a:link {
+    color: white;
+    font-size: 150%;
+
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: rgb(94, 3, 3);
+}
+button {
+    font-size: medium;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px 8px;
+    margin: 2px 0px;
+    cursor: pointer;
+}
+.btn {
+    font-size: medium;
+    background-color: rgb(8, 164, 255);
+    color: white;
+    border-radius: 5px;
+    width: 10%;
+    padding: 8px 5px;
+    margin: 0px 0px;
+    cursor: pointer;
+    position: absolute;
+    right: 800px;
+    bottom: 250px;
+}
